@@ -1,0 +1,18 @@
+font-family JetBrainsMono Nerd Font Mono
+font_size 18
+scrollback_lines	5000
+mouse_hide_wait	-3.0
+hide_window_decorations yes
+cursor_trail 200
+cursor_trail_decay 0.1 0.4
+cursor_trail_start_threshold 2
+# background_image /home/kira/Pictures/wallpapers/wallhaven-mllvv1.jpg
+# background_image_layout centered
+
+
+
+
+# BEGIN_KITTY_THEME
+# Noctalia
+include current-theme.conf
+# END_KITTY_THEME

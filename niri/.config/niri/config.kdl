@@ -1,0 +1,28 @@
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
+
+
+workspace "1"
+workspace "2"
+workspace "3"
+workspace "4"
+workspace "5"
+include "./noctalia.kdl"
+
