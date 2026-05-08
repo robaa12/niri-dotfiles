@@ -14,13 +14,15 @@ binds {
     Mod+B                              hotkey-overlay-title="Open Browser: firefox" { spawn "helium-browser"; }
     Mod+L                              hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+Shift+Q                        hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-
+    Mod+V                              hotkey-overlay-title="Toggle Clipper: noctalia clipper" { spawn-sh "qs -c noctalia-shell ipc call plugin:clipper toggle"; }
+    Mod+W                              hotkey-overlay-title="Toggle Wallpaper" {spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }            
+    Mod+S                              hotkey-overlay-title="Open Noctila Settings" {spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
     Mod+M                              hotkey-overlay-title="Music (Spotify)" { spawn "spotify"; }
-    Mod+E                              hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
+    Mod+E                              hotkey-overlay-title="File Manager: Nautilus" { spawn "dolphin"; }
     Mod+O                              hotkey-overlay-title="Obsidian" {spawn "obsidian"; }
     Mod+H                              hotkey-overlay-title="Discord" {spawn "discord";}
-
-    // ─── Media Controls ───
+    Mod+C hotkey-overlay-title="اذاعه القران الكريم" { spawn-sh "~/.config/niri/scripts/radio.sh"; } 
+// ─── Media Controls ───
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
     XF86AudioLowerVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
     XF86AudioMute                       allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
@@ -108,7 +110,7 @@ binds {
     Mod+CTRL+F                          { expand-column-to-available-width; }
     Mod+D { switch-preset-column-width; }
     Mod+F {maximize-column;}
-    Mod+C                               { center-column; }
+    // Mod+C                               { center-column; }
     Mod+CTRL+C                          { center-visible-columns; }
     Mod+Minus                           { set-column-width "-10%"; }
     Mod+Equal                           { set-column-width "+10%"; }
@@ -118,7 +120,7 @@ binds {
     // ─── Modes ───
     Mod+T                               { toggle-window-floating; }
     Mod+Shift+F                               { fullscreen-window; }
-    Mod+W                               { toggle-column-tabbed-display; }
+    // Mod+W                               { toggle-column-tabbed-display; }
     Mod+Tab repeat=false { toggle-overview; }
 
     // ─── Screenshots ───
